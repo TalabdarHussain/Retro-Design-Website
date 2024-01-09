@@ -1,3 +1,7 @@
+@font-face {
+    font-family: EditorialNew-Light;
+    src: url(./5f242a694256f02b944d5767_EditorialNew-Light.ttf);
+}
 *{
     margin: 0px;
     padding: 0px;
@@ -11,16 +15,21 @@ body,html{
 }
 
 
-#main{
-
-
-    height: 100vh;
-    width: 100vw;
+#main {
+    min-height: 100vh;
+    width: 100%; /* Change from 100vw to 100% */
     background-color: #C5BDB4;
+    overflow-x: hidden;
+    padding-left: 3%; /* Adjust padding as needed */
+    padding-right: 3%; /* Adjust padding as needed */
+}
+#main::-webkit-scrollbar{
+    display: none;
 }
 
 #page1{
     position: relative;
+     
 }
 
 #nav{
@@ -57,31 +66,39 @@ border-bottom: 1px solid black;
     display: flex;
     justify-content: space-around;
     align-items: center;
-    padding: 40px 60px;
+    padding: 30px 20px;
 
 }
 #elem1{
-    width: 25%;
+    width: 29%;
     height: 100%;
     /* background-color: blue; */
-    border-right: 1px solid black;
+    
 }
 #elem2{
-    width: 25%;
+    width: 29%;
     height: 100%;
+    text-align: center;
     /* background-color: blue; */
+    border-right: 1px solid black;
+    border-left: 1px solid black;
+
+ padding-top: 30px;
 }
 #elem3{
     width: 30%;
     height: 100%;
     /* background-color: blue; */
-    border-left: 1px solid black;
+    
 }
 
 #elem1 #img-div{
     height: 150px;
     width: 100%;
     overflow: hidden;
+    margin-bottom: 20px;
+    
+
 }
 
 
@@ -90,16 +107,109 @@ border-bottom: 1px solid black;
     width: 100%;
     object-fit: cover;
     transition: all ease 0.4s;
+    border: 1px solid black;
+    
 }
 
 #elem3 #img-div{
-    height: 110px;
+    height: 150px;
     width: 100%;
+    margin-bottom: 20px;
+
     overflow: hidden;
+    
+
 
 }
 
 
 #img-div:hover img{
     scale: 1.1;;
+}
+
+
+#elem1 h4 span{
+    background-color: #BA3D12;
+    padding: 5px;
+    border-radius: 3px;
+    
+}
+
+#elem3 h4 span{
+    background-color: #BA3D12;
+    padding: 5px;
+    border-radius: 3px;
+}
+
+
+#elem1 h4 {
+    margin-bottom: 10px; /* Adjust this value as needed */
+}
+
+#elem3 h4 {
+    margin-bottom: 10px; /* Adjust this value as needed */
+}
+
+
+#elem2 #tip,
+#elem2 span {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+
+
+
+#elem1 h4{
+
+    font-family: canopee;
+}
+
+#elem3 h4{
+    font-family: canopee;
+}
+
+#elem2 h2{
+
+    font-family: canopee;
+    font-size: 55px;
+    font-weight: 100;
+}
+
+
+#elem2 h3{
+
+    font-family: EditorialNew-Light;
+    font-size: 30px;
+    font-weight: 70
+    ;
+    margin-bottom: 28px;
+}
+
+#elem2 H4{
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    
+}
+
+#tip{
+    font-family: canopee;
+    font-weight: 80;
+}
+
+ 
+h1{
+
+    
+    font-size: 450px;
+    font-family: canopee;
+    background-color: #1C1C19;
+    color: #C5BDB3;
+   line-height: 350px;
+   width: 94%;
+   margin-left: 3%;
+   text-align: center;
+   font-weight: 100;
+   letter-spacing: -11px;
 }
