@@ -9,19 +9,20 @@
 }
  
 body,html{
- 
+    padding: 0;
+    margin: 0;
     height: 100%;
     width: 100%;
 }
 
 
-#main {
+#main{
+
+
     min-height: 100vh;
-    width: 100%; /* Change from 100vw to 100% */
+    width: 100vw;
     background-color: #C5BDB4;
     overflow-x: hidden;
-    padding-left: 3%; /* Adjust padding as needed */
-    padding-right: 3%; /* Adjust padding as needed */
 }
 #main::-webkit-scrollbar{
     display: none;
@@ -199,7 +200,7 @@ border-bottom: 1px solid black;
 }
 
  
-h1{
+#main h1{
 
     
     font-size: 450px;
@@ -212,4 +213,73 @@ h1{
    text-align: center;
    font-weight: 100;
    letter-spacing: -11px;
+}
+
+
+#page2{
+    display: flex;
+    justify-content: space-between;
+    background-color: #C5BDB3;
+}
+
+
+
+
+#left{
+
+    width: 30%;
+    height: 100;
+    
+    ;
+}
+
+
+#right{
+
+    width: 70%;
+    height: 100;
+    background-color: blue;
+    border-left: 1px solid black;
+}
+
+
+#left #img-div{
+    
+    width: 90%;
+    height: 500px;
+    margin-left: 20px;
+    object-fit: cover;
+
+
+}
+
+
+#left h1,h2{
+ font-family: canopee; 
+ text-align: center;
+ font-size: 130px;
+ font-weight: 100; 
+ margin-top: -37px; 
+}
+
+#left h2{
+    font-family: canopee; 
+    text-align: center;
+    font-size: 80px;
+    font-weight: 100;  
+    margin-top: 20px;    
+   }
+
+   #left h2, #left h1 {
+    margin-bottom: 10px; /* Adjust this value to reduce the space */
+}
+
+
+
+#page2 #haha{
+     
+    color: white;
+    border-top: 10px;
+    text-align: left;
+    
 }
